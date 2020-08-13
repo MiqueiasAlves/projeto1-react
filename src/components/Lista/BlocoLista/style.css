@@ -1,0 +1,20 @@
+.lista-anotacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.lista-anotacoes article{
+    padding: 10px;
+    background-color: #fff;
+    color: var(--primaryColor);
+    margin: 10px;
+    max-height: 200px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid orange;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);   
+}
+.lista-anotacoes article h3{
+    color: orange;
+}
+

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+:root{
+    --primaryColor: #373535;
+    --textColor: #fff;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+  }
+  
+.container{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    gap: 20px
+}
+
+@media (max-width: 800px){
+  .container{
+    flex-direction: column;
+  }
+ 
+}

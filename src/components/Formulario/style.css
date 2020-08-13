@@ -1,0 +1,51 @@
+form{
+    position: relative;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 0 50px 0 10px;
+}
+form::before{
+    content: "";
+    border-left: 1px solid orange;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 800px){
+    form::before{
+        border-left: none;
+        border-bottom: 1px solid orange;
+        bottom: 0;
+        left: 0;
+    }
+    form{
+        width: 100%;
+
+    }
+}
+form input, textarea{ 
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid orange;
+    box-sizing: border-box;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+form input:focus, textarea:focus{
+    outline: none;
+}
+form button{
+    padding: 10px;
+    font-weight: 700;
+    background-color: orange;
+    color:var(--textColor);
+    cursor: pointer;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+form button:focus{
+    outline: none;
+}
